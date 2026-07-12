@@ -81,11 +81,17 @@ rgba(250,210,140,.95) 50%,
 rgba(235,180,85,.94) 100%
 );
   border-bottom: 1px solid rgba(216,194,122,.40);
-  backdrop-filter: blur(2px);
-  box-shadow: 0 4px 18px rgba(0,0,0,.35);
-  z-index:10;
-}
+  backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
 
+    border-radius:0 0 8px 8px;
+
+    box-shadow:
+        0 3px 10px rgba(0,0,0,.18),
+        0 8px 24px rgba(0,0,0,.22);
+
+    z-index:10;
+}
 #jam{
     width:250px;
     display:flex;
